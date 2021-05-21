@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go.</title>
+    <link rel="shortcut icon" href="images/about_rock-img.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header" id="main">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <div class="burger-btn">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__items">
+                        <li class="menu__item">
+                            <a href=#tours>Туры</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#description">О Норвегии</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#team">Команда</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="top">
+        <div class="container">
+            <div class="top__name">
+                Norway
+            </div>
+            <div class="top__box">
+                <h1 class="top__title">
+                    Норвегия
+                </h1>
+                <p class="top__text">
+                    почувствуй силу природы
+                </p>
+                <div class="top__btn">
+                    <a data-fancybox data-animation-duration="500" data-src="#selectableModal"
+                        href="javascript:;">Оставить заявку</a>
+                    <div class="modal" style="display: none;max-width:500px;" id="selectableModal">
+                        <form class="modal__form">
+                            <h2 class="modal__title" data-selectable="true">Заявка</h2>
+                            <input class="modal__name" type="text" placeholder="Ваше ФИО">
+                            <input class="modal__email" type="email" placeholder="Ваша почта">
+                            <button class="modal__btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="top__social">
+                <ul class="top__social-items">
+                    <li class="top__social-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/icon-instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="top__social-item">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="images/icon-facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="top__social-item">
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img src="images/icon-twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="bg-main">
+        <section class="tours" id="tours">
+            <div class="container">
+                <h2 class="tours__title">
+                    Выбери свой тур
+                </h2>
+                <div class="tours__box">
+                    <div class="tours__items" data-simplebar>
+                        <div class="tours__item">
+                            <div class="tours__item-img">
+                                <img src="images/slider_img-first.jpg" alt="first-img">
+                            </div>
+                            <div class="tours__item-inner">
+                                <h3 class="tours__item-name">
+                                    Тайна фьордов
+                                    <span class="tours__item-period">
+                                        14 дней
+                                    </span>
+                                </h3>
+                                <p class="tours__item-text">
+                                    Путешествие наполненное горными
+                                    ландшафтами, ледниками и&nbsp;глубокими
+                                    фьордами. Идеально для тех, кто хочет
+                                    ощтить всю силу природы.
+                                </p>
+                                <p class="tours__item-date">
+                                    Даты: 14, 17&nbsp;января, 5&nbsp;февраля
+                                </p>
+                                <div class="tours__item-bottom">
+                                    <p class="tours__item-price">
+                                        30&nbsp;000&nbsp;₽
+                                    </p>
+                                    <a href="#" class="tours__item-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours__item">
+                            <div class="tours__item-img">
+                                <img src="images/slider_img-second.jpg" alt="second-img">
+                            </div>
+                            <div class="tours__item-inner">
+                                <h3 class="tours__item-name">
+                                    Основной тур
+                                    <span class="tours__item-period">
+                                        12 дней
+                                    </span>
+                                </h3>
+                                <p class="tours__item-text">
+                                    Незабываемое путешествие по&nbsp;самым
+                                    интересным местам Норвегии.
+                                    Соединяет в&nbsp;себе лучшее
+                                    в&nbsp;норвежской культуре и&nbsp;природе.
+                                </p>
+                                <p class="tours__item-date">
+                                    Даты: 11, 19&nbsp;июня, 5&nbsp;мая
+                                </p>
+                                <div class="tours__item-bottom">
+                                    <p class="tours__item-price">
+                                        25&nbsp;000&nbsp;₽
+                                    </p>
+                                    <a href="#" class="tours__item-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours__item">
+                            <div class="tours__item-img">
+                                <img src="images/slider_img-third.jpg" alt="third-img">
+                            </div>
+                            <div class="tours__item-inner">
+                                <h3 class="tours__item-name" id="tops">
+                                    Снежные вершины
+                                    <span class="tours__item-period">
+                                        8 дней
+                                    </span>
+                                </h3>
+                                <p class="tours__item-text">
+                                    Для любителей драйва, скорости и
+                                    свободы предлагаем, предлагаем тур
+                                    по&nbsp;самым захватывающим местам
+                                    норвежских гор.
+                                </p>
+                                <p class="tours__item-date">
+                                    Даты: 21, 24&nbsp;декабря, 4&nbsp;января
+                                </p>
+                                <div class="tours__item-bottom">
+                                    <p class="tours__item-price">
+                                        28&nbsp;000&nbsp;₽
+                                    </p>
+                                    <a href="#" class="tours__item-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours__item">
+                            <div class="tours__item-img">
+                                <img src="images/slider_img-third.jpg" alt="third-img">
+                            </div>
+                            <div class="tours__item-inner">
+                                <h3 class="tours__item-name">
+                                    Фото-тур
+                                    <span class="tours__item-period">
+                                        5 дней
+                                    </span>
+                                </h3>
+                                <p class="tours__item-text">
+                                    Тур для тех, кто хочет посетить самые красивые и&nbsp;популярные места Норвегии.
+                                    Ваш инстаграм взорвётся от&nbsp;активности. Идеальный тур для инста-блоггеров.
+                                </p>
+                                <p class="tours__item-date">
+                                    Даты: 14, 17&nbsp;января, 5&nbsp;февраля
+                                </p>
+                                <div class="tours__item-bottom">
+                                    <p class="tours__item-price">
+                                        35&nbsp;000&nbsp;₽
+                                    </p>
+                                    <a href="#" class="tours__item-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours__item">
+                            <div class="tours__item-img">
+                                <img src="images/slider_img-first.jpg" alt="first-img">
+                            </div>
+                            <div class="tours__item-inner">
+                                <h3 class="tours__item-name">
+                                    Тайна фьордов
+                                    <span class="tours__item-period">
+                                        14 дней
+                                    </span>
+                                </h3>
+                                <p class="tours__item-text">
+                                    Путешествие наполненное горными
+                                    ландшафтами, ледниками и&nbsp;глубокими
+                                    фьордами. Идеально для тех, кто хочет
+                                    ощтить всю силу природы.
+                                </p>
+                                <p class="tours__item-date">
+                                    Даты: 14, 17&nbsp;января, 5&nbsp;февраля
+                                </p>
+                                <div class="tours__item-bottom">
+                                    <p class="tours__item-price">
+                                        30&nbsp;000&nbsp;₽
+                                    </p>
+                                    <a href="#" class="tours__item-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours__item">
+                            <div class="tours__item-img">
+                                <img src="images/slider_img-second.jpg" alt="second-img">
+                            </div>
+                            <div class="tours__item-inner">
+                                <h3 class="tours__item-name">
+                                    Основной тур
+                                    <span class="tours__item-period">
+                                        12 дней
+                                    </span>
+                                </h3>
+                                <p class="tours__item-text">
+                                    Незабываемое путешествие по&nbsp;самым
+                                    интересным местам Норвегии.
+                                    Соединяет в&nbsp;себе лучшее
+                                    в&nbsp;норвежской культуре и&nbsp;природе.
+                                </p>
+                                <p class="tours__item-date">
+                                    Даты: 11, 19&nbsp;июня, 5&nbsp;мая
+                                </p>
+                                <div class="tours__item-bottom">
+                                    <p class="tours__item-price">
+                                        25&nbsp;000&nbsp;₽
+                                    </p>
+                                    <a href="#" class="tours__item-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours__item">
+                            <div class="tours__item-img">
+                                <img src="images/slider_img-third.jpg" alt="third-img">
+                            </div>
+                            <div class="tours__item-inner">
+                                <h3 class="tours__item-name">
+                                    Снежные вершины
+                                    <span class="tours__item-period">
+                                        8 дней
+                                    </span>
+                                </h3>
+                                <p class="tours__item-text">
+                                    Для любителей драйва, скорости и
+                                    свободы предлагаем, предлагаем тур
+                                    по&nbsp;самым захватывающим местам
+                                    норвежских гор.
+                                </p>
+                                <p class="tours__item-date">
+                                    Даты: 21, 24&nbsp;декабря, 4&nbsp;января
+                                </p>
+                                <div class="tours__item-bottom">
+                                    <p class="tours__item-price">
+                                        28&nbsp;000&nbsp;₽
+                                    </p>
+                                    <a href="#" class="tours__item-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description" id="description">
+            <div class="container">
+                <h2 class="description__title">
+                    О Норвегии
+                </h2>
+
+                <div class="description__box" data-simplebar>
+                    <div class="description__suptitle">
+                        <img class="description__img" src="images/about_rock-img.png" alt="rock">
+                        <p class="description__name">Фьорды</p>
+                    </div>
+                    <p class="description__text">
+                        <span>Фьорд</span> &mdash;&nbsp;это узкий извилистый и&nbsp;глубоко врезающийся в&nbsp;сушу
+                        морской залив со&nbsp;скалистыми
+                        берегами.
+                        <br><br>
+                        Норвегия имет самую большую
+                        протяженость фьордов в&nbsp;мире.
+                        <br><br>
+                        Если брать в&nbsp;расчет все фьорды
+                        и&nbsp;острова, то&nbsp;протяженность
+                        береговой линии составит более
+                        <span>100тыс.км.</span>
+                        <br><br>
+                        <span>Норланд</span> &mdash;&nbsp;плоскогорье на&nbsp;северо-востоке Скандинавского полуострова,
+                        на&nbsp;севере
+                        Швеции и&nbsp;частично в&nbsp;Финляндии. Высота плоскогорья ступенчато уменьшается
+                        с&nbsp;800&nbsp;м у
+                        Скандинавского нагорья (на&nbsp;западе) до&nbsp;200&nbsp;м у&nbsp;побережья Ботнического залива
+                        (на&nbsp;востоке).
+                        Сложено преимущественно кристаллическими породами Балтийского щита: гранитами, гнейсами,
+                        прикрытыми ледниковыми отложениями. Имеются месторождения высококачественных железных руд и
+                        цветных металлов.
+                        <br><br>
+                        Климат района умеренный, переходный от&nbsp;океанического к&nbsp;континентальному. Реки
+                        порожистые,
+                        обладают большими запасами гидроэнергии и&nbsp;используются для лесосплава. Таёжные еловые и
+                        сосновые
+                        леса (местами со&nbsp;значительными примесями берёзы) на&nbsp;подзолистых почвах.
+                    </p>
+                </div>
+            </div>
+            <img class="description__bg" src="images/description-bg.png" alt="">
+        </section>
+
+        <section class="team" id="team">
+            <div class="container">
+                <h2 class="team__title">
+                    Наша команда
+                </h2>
+                <div class="team__box">
+                    <div class="team__item">
+                        <img class="team__img" src="images/team-first.png" alt="team-first">
+                        <h4 class="team__name">
+                            Ксения Омцева
+                        </h4>
+                        <p class="team__activity">
+                            Гид-историк
+                        </p>
+                        <p class="team__experience">
+                            Опыт работы гидом: 6&nbsp;лет
+                        </p>
+                        <p class="team__text">
+                            Расскажет вам всё самое
+                            интересное из&nbsp;истории
+                            Норвегии
+                        </p>
+                    </div>
+                    <div class="team__item">
+                        <img class="team__img" src="images/team-second.png" alt="team-second">
+                        <h4 class=" team__name">
+                            Матвей Сергеев
+                        </h4>
+                        <p class="team__activity">
+                            Гид-инструктор
+                        </p>
+                        <p class="team__experience">
+                            Опыт работы гидом: 10&nbsp;лет
+                        </p>
+                        <p class="team__text">
+                            Построит незабываемый маршрут
+                            и&nbsp;поделится главными секретами
+                            опытных альпинистов
+                        </p>
+                    </div>
+                    <div class="team__item">
+                        <img class="team__img" src="images/team-third.png" alt="team-third">
+                        <h4 class="team__name">
+                            Андрей Вахрушев
+                        </h4>
+                        <p class="team__activity">
+                            Фотограф
+                        </p>
+                        <p class="team__text">
+                            Топовый фотограф запечатлит
+                            лучшие моменты из&nbsp;путешествия,
+                            чтобы навсегда сохранить ваши
+                            воспоминания
+                        </p>
+                    </div>
+                </div>
+                <div class="team__inner">
+                    <div class="team__btn">
+                        <a data-fancybox data-animation-duration="500" data-src="#selectableModal-1"
+                            href="javascript:;">
+                            Связаться с нами
+                        </a>
+
+                        <div class="modal" style="display: none;max-width:500px;" id="selectableModal-1">
+                            <form class="modal__form">
+                                <h2 class="modal__title" data-selectable="true">Оставьте ваши контактные данные
+                                    и&nbsp;наш
+                                    консультант свяжется с&nbsp;вами</h2>
+                                <input class="modal__name" type="text" placeholder="Ваше имя">
+                                <input class="modal__phone" type="tel" placeholder="Ваша номер телефона">
+                                <button class="modal__btn">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="about__title">
+                    Что говорят о нас ?
+                </h2>
+                <div class="about__slider">
+                    <div class="about__item">
+                        <div class="about__box">
+                            <img class="about__img" src="images/review_first-img.jpg" alt="">
+                            <div class="about__content">
+                                <div class="about__name">
+                                    Алексей
+                                    <span class="about__date">
+                                        Январь 2020
+                                    </span>
+                                </div>
+                                <div class="about__type">
+                                    Тур:
+                                    <span>
+                                        <a href="#tops">Снежные вершины</a>
+                                    </span>
+                                </div>
+                                <p class="about__text">
+                                    Спасибо большое за&nbsp;это путешествие и&nbsp;за
+                                    эти эмоции! Горы Норвегии останутся в
+                                    душе навсегда, лучшие склоны для
+                                    сноубординга.
+                                </p>
+                                <p class="about__text">
+                                    Организовано все на&nbsp;высшем уровне.
+                                    Погода радовала, очень атмосферное жилье,
+                                    питались очень вкусно. Матвей замечательный
+                                    гид и&nbsp;инструктор. Все советую!
+                                </p>
+                                <div class="about__number">
+                                    <span>01</span><span>05</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__box">
+                            <img class="about__img" src="images/review_first-img.jpg" alt="">
+                            <div class="about__content">
+                                <div class="about__name">
+                                    Сергей
+                                    <span class="about__date">
+                                        Февраль 2020
+                                    </span>
+                                </div>
+                                <div class="about__type">
+                                    Тур:
+                                    <span>
+                                        <a href="#tops">Снежные вершины</a>
+                                    </span>
+                                </div>
+                                <p class="about__text">
+                                    Спасибо большое за&nbsp;это путешествие и&nbsp;за
+                                    эти эмоции! Горы Норвегии останутся в
+                                    душе навсегда, лучшие склоны для
+                                    сноубординга.
+                                </p>
+                                <p class="about__text">
+                                    Организовано все на&nbsp;высшем уровне.
+                                    Погода радовала, очень атмосферное жилье,
+                                    питались очень вкусно. Матвей замечательный
+                                    гид и&nbsp;инструктор. Все советую!
+                                </p>
+                                <div class="about__number">
+                                    <span>02</span><span>05</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__box">
+                            <img class="about__img" src="images/review_first-img.jpg" alt="">
+                            <div class="about__content">
+                                <div class="about__name">
+                                    Иван
+                                    <span class="about__date">
+                                        Март 2020
+                                    </span>
+                                </div>
+                                <div class="about__type">
+                                    Тур:
+                                    <span>
+                                        <a href="#tops">Снежные вершины</a>
+                                    </span>
+                                </div>
+                                <p class="about__text">
+                                    Спасибо большое за&nbsp;это путешествие и&nbsp;за
+                                    эти эмоции! Горы Норвегии останутся в
+                                    душе навсегда, лучшие склоны для
+                                    сноубординга.
+                                </p>
+                                <p class="about__text">
+                                    Организовано все на&nbsp;высшем уровне.
+                                    Погода радовала, очень атмосферное жилье,
+                                    питались очень вкусно. Матвей замечательный
+                                    гид и&nbsp;инструктор. Все советую!
+                                </p>
+                                <div class="about__number">
+                                    <span>03</span><span>05</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__box">
+                            <img class="about__img" src="images/review_first-img.jpg" alt="">
+                            <div class="about__content">
+                                <div class="about__name">
+                                    Дмитрий
+                                    <span class="about__date">
+                                        Апрель 2020
+                                    </span>
+                                </div>
+                                <div class="about__type">
+                                    Тур:
+                                    <span>
+                                        <a href="#tops">Снежные вершины</a>
+                                    </span>
+                                </div>
+                                <p class="about__text">
+                                    Спасибо большое за&nbsp;это путешествие и&nbsp;за
+                                    эти эмоции! Горы Норвегии останутся в
+                                    душе навсегда, лучшие склоны для
+                                    сноубординга.
+                                </p>
+                                <p class="about__text">
+                                    Организовано все на&nbsp;высшем уровне.
+                                    Погода радовала, очень атмосферное жилье,
+                                    питались очень вкусно. Матвей замечательный
+                                    гид и&nbsp;инструктор. Все советую!
+                                </p>
+                                <div class="about__number">
+                                    <span>04</span><span>05</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__box">
+                            <img class="about__img" src="images/review_first-img.jpg" alt="">
+                            <div class="about__content">
+                                <div class="about__name">
+                                    Олег
+                                    <span class="about__date">
+                                        Май 2020
+                                    </span>
+                                </div>
+                                <div class="about__type">
+                                    Тур:
+                                    <span>
+                                        <a href="#tops">Снежные вершины</a>
+                                    </span>
+                                </div>
+                                <p class="about__text">
+                                    Спасибо большое за&nbsp;это путешествие и&nbsp;за
+                                    эти эмоции! Горы Норвегии останутся в
+                                    душе навсегда, лучшие склоны для
+                                    сноубординга.
+                                </p>
+                                <p class="about__text">
+                                    Организовано все на&nbsp;высшем уровне.
+                                    Погода радовала, очень атмосферное жилье,
+                                    питались очень вкусно. Матвей замечательный
+                                    гид и&nbsp;инструктор. Все советую!
+                                </p>
+                                <div class="about__number">
+                                    <span>05</span><span>05</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__box">
+                    <div class="footer__logo">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="footer__social">
+                        <ul class="social__items">
+                            <li class="social__items-link">
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <img src="images/icon-instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li class="social__items-link">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <img src="images/icon-facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li class="social__items-link">
+                                <a href="https://www.twitter.com" target="_blank">
+                                    <img src="images/icon-twitter.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="footer__inner">
+                    <div class="footer__menu">
+                        <h4 class="footer__menu-title">
+                            Туристам
+                        </h4>
+                        <ul class="footer__menu-items">
+                            <li class="footer__menu-item">
+                                <a href="#main">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#tours">
+                                    Туры
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">
+                                    Места
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">
+                                    Галерея
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <h4 class="footer__menu-title">
+                            О компании
+                        </h4>
+                        <ul class="footer__menu-items">
+                            <li class="footer__menu-item">
+                                <a href="#about">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#team">
+                                    Наша команда
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="https://www.instagram.com" target="_blank">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">
+                                    Вопросы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <h4 class="footer__menu-title">
+                            Контакты
+                        </h4>
+                        <ul class="footer__menu-items">
+                            <li class="footer__menu-item">
+                                Киев,
+                                Хрещатик
+                            </li>
+                            <li class="footer__menu-item">
+                                пн-пт: с&nbsp;10&nbsp;до&nbsp;19 <br>
+                                сб-вс: с&nbsp;11&nbsp;до&nbsp;16
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="tel:380000000000">
+                                    +38(000) 000-0000
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="mailto:info123321@go.ua">
+                                    info@go.ua
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
